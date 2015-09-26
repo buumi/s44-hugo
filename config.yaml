@@ -1,0 +1,46 @@
+baseurl: "https://spring1944.github.io"
+languageCode: "en-us"
+title: "Spring: 1944"
+
+params:
+  inc:
+    # Blog Information
+    title:        "Spring:1944"
+    subtitle:     "Free, Open Source WWII RTS"
+    cover_image:  "jpn-tankette.jpg"
+    logo:         "helmets.png"
+    
+    # Company information
+    company:      "Spring: 1944 Team"
+    url:          "https://spring1944.github.io"
+#    facebook:     
+    github:       "spring1944"
+#    gplus:        ''
+    
+    # main nav
+    tagline:      "Free, Open Source WWII RTS"
+    
+    # Comments
+    disqus:
+      shortname:  false
+    
+    # Sharing settings
+    sharing:
+      twitter:    false
+      facebook:   false
+      gplus:      false
+      hn:         false
+      
+    
+   # Analytics     
+    analytics:
+      googleid: "UA-68138628-1"
+#      piwik:
+#        domain: piwik.example.com
+#        siteid: 0
+        
+    # Google Fonts
+    # eg. 'Droid+Sans:400,700|Droid+Serif:400,700'
+    google_font: 'Droid+Sans:400,700'
+    
+    # Setup your fonts, colors etc at _assets/stylesheets/main.scss
