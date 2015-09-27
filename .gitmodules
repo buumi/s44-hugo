@@ -3,4 +3,4 @@
 	url = https://github.com/nilproductions/hugo-incorporated.git
 [submodule "public"]
 	path = public
-	url = git@github.com:spring1944/spring1944.github.io.git
+	url = git@github.com:spring1944/spring1944.github.io
