@@ -1,0 +1,55 @@
+{{ partial "header.html" . }}
+
+<div class="blog-cover" style="background-image:url(/images/{{ .Site.Params.inc.cover_image }});">
+    
+    <section>
+        <div class="container">
+			<h1><img width="20%"src="/images/{{ .Site.Params.inc.logo }}"
+				alt="Inc"></h1>
+            {{ with .Site.Params.inc.subtitle }}<h3>{{ . }}</h3>{{ end }}
+        
+            {{ with .Site.Params.inc.twitter }}
+            <a href="https://twitter.com/{{ . }}" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter"></i></a>
+            {{ end }}
+            {{ with .Site.Params.inc.github }}
+            <a href="https://github.com/{{ . }}" title="Follow on Github" target="_blank"><i class="icon icon-github"></i></a>
+            {{ end }}
+            {{ with .Site.Params.inc.facebook }}
+            <a href="http://facebook.com/{{ . }}" title="Like on Facebook" target="_blank"><i class="icon icon-facebook"></i></a>
+            {{ end }}
+            <a href="/index.xml" title="RSS Feed">
+                <i class="icon icon-rss"></i>
+            </a>
+        </div>
+    </section>
+</div>
+
+
+<div class="grid">
+	<div class="grid__col grid__col--1-of-2">
+		<article class="container">
+		  {{ range first 10 .Data.Pages }}
+			{{ .Render "summary" }}
+		  {{ end }}
+		</article>
+	</div>
+	<div class="text-center container grid__col grid__col--1-of-2">
+		<div>
+			<h2> Recent Casts </h2>
+			<iframe width="600" height="400"
+			src="https://www.youtube.com/embed/videoseries?list=PL-N46tAD8SxZmCF5MIPzXZ-2y3RVF4KWA"
+			frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div>
+			<h2> Repository </h2>
+			<div class="github-widget" data-repo="spring1944/spring1944"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<section class="pagination" style="text-align:center">
+  <a href="/post/" class="btn btn-outline">Archives</a>
+</section>
+{{ partial "footer.html" . }}

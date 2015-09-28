@@ -8,7 +8,7 @@ params:
     title:        "Spring:1944"
     subtitle:     "Free, Open Source WWII RTS"
     cover_image:  "jpn-tankette.jpg"
-    logo:         "helmets.png"
+    logo:         "S44-logo-vector.png"
     
     # Company information
     company:      "Spring: 1944 Team"

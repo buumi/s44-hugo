@@ -6,6 +6,7 @@
     <title>{{ .Site.Params.inc.title }} &mdash; {{ .Site.Params.inc.subtitle }}</title>
     {{ with .Site.Params.inc.google_font }}<link href="https://fonts.googleapis.com/css?family={{ . }}" rel="stylesheet" type="text/css">{{ end }}
     <link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toast-css/1.0.0/grid.min.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/images/{{ .Site.Params.inc.logo }}"/>
     <link href="{{ .Site.BaseURL }}/index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Params.inc.title }}" />
